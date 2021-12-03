@@ -4,7 +4,7 @@ class CreateSongs < ActiveRecord::Migration[6.1]
       t.string :title
       t.float :duration
       t.string :album
-      t.belongs_to :Artist, null: false, foreign_key: true
+      t.belongs_to :artist, null: false, foreign_key: true
 
       t.timestamps
     end

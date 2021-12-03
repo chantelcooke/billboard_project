@@ -3,7 +3,7 @@ class CreateArtists < ActiveRecord::Migration[6.1]
     create_table :artists do |t|
       t.string :name
       t.integer :rank
-      t.belongs_to :Billboard, null: false, foreign_key: true
+      t.belongs_to :billboard, null: false, foreign_key: true
 
       t.timestamps
     end
